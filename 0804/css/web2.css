@@ -1,0 +1,42 @@
+
+body{
+	font-size: 18px;
+	width: 100%;
+}
+/*自訂css id 時,在樣式中要以#開頭*/
+#banner{
+	border: 5px solid red; /*border邊框 solid實體*/
+	width: 100%;
+	height: 100px;
+}
+#menu{
+	border: 5px solid green;
+	width: 100%; /*寬%是因為要做自適應*/
+	height: 70px;
+}
+#content{
+	border: 5px solid blue;
+	width: 100%;
+	min-height: 300px;  /*min-height最低高度*/
+}/*設定height為多少時,那個區塊高度就是固定裡面的內容超過區塊,則內容會越界*/
+#footer{
+	border: 5px solid #cccccc;
+	width: 100%;
+	height: 70px;
+}
+/*class的定義是以.表示此樣式提供給多個div來使用*/
+.info{
+	width: 30%;
+	border: 2px solid#ffff00;
+	height: 200px;
+	float: left;/*設定此區塊為浮塊,回浮起來!!可靠左left\可靠右right*/
+	/*padding 內部距離,padding-top上面left左right右bottom底
+	padding: 上 右 下 左;padding: 上下 左右;padding: 上左右下;
+	padding: 10px 20px 30px 40px;
+	padding: 20px 10px;
+	padding: 同值;
+	*/
+	padding: 20px;/*上下左右 都20px*/
+	/*margin 外部距離,內容上padding*/
+	margin: 20px;
+}
