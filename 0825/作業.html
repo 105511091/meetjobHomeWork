@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表單</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<form id="form1" action="order.php" method="post">
+			<!--
+				元素區塊，被包起來的視為同一個區塊，這個區塊會有邊框
+			-->
+			<fieldset>
+				<legend>帳單資訊</legend>
+				<div>
+					<label for="name">姓名</label>
+					<input type="text" id="name"/>
+				</div>
+				<div>
+					<label for="address">地址</label>
+					<input type="text" id="address"/>
+				</div>
+				<div>
+					<span>付款方式</span>
+					<input type="radio" name="payment" value="creditcard" id="creditcard" checked />
+					<label for="credit">信用卡</label>
+					<input type="radio" name="payment" value="transfer" id="transfer"/>
+					<label for="transfer">轉帳</label>
+				</div>
+				<div id="credit">
+					<div>
+						<label for="cardNumber">卡號</label>
+						<input type="text" id="cardNumber" />
+						<!--
+							attr("disabled",true) 表示不可以輸入
+							attr("disabled",false) 表示可以輸入
+						-->
+					</div>
+					<div>
+						<label for="expiration">有效期限</label>
+						<input type="text" id="expiration"/>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>送貨地址</legend>
+				<div>
+					<input type="checkbox" id="hideShip"/>
+					<label for="hideShip">同帳單地址</label>
+				</div>
+				<div class="unfo">
+					<label for="shipName">姓名</label>
+					<input type="text" id="shipName"/>
+				</div>
+				<div class="unfo">
+					<label for="shipAddress">地址</label>
+					<input type="text" id="shipAddress"/>
+				</div>
+			</fieldset>
+		</form>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#hideShip").click(function(){
+					$(".unfo").toggle();
+				})
+				$("#transfer").click(function(){
+					$("#cardNumber").attr("disabled",true);
+					$("#expiration").attr("disabled",true);
+				})
+				$("#creditcard").click(function(){
+					$("#cardNumber").attr("disabled",false);
+					$("#expiration").attr("disabled",false);
+				})
+			})
+		</script>
+	</body>
+
+</html>
