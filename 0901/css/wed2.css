@@ -1,0 +1,280 @@
+body{
+				margin: 0 auto;
+			}
+			#unfo{
+				width: 100%;
+				height: 70px;
+			}
+			#unfo img{
+				float: left;
+				margin: 15px 30px;
+			}
+			#menu{
+				width: 100%;
+				height: 50px;
+				background-color: #FAAF37;
+				}
+			.menulist{
+				height: 50px;
+				text-decoration: none;
+				position: absolute;
+			}
+			#menulist ul{
+				list-style: none;
+				padding: 0 ;
+				margin: 0 ;
+				font-size: 18px;
+			}
+			#menulist li{
+				float: left;
+				list-style: none;
+				border-right: 1px solid #cccccc;
+			}
+			#menulist a{
+				color: #000000;
+				display: block;
+				text-decoration: none;
+				width: 80px;
+				margin: 0 50px;
+
+			}
+			#menulist li ul{
+				position: absolute;
+				width: 70px;
+			}
+
+			.onfo{
+				width: 100%;
+				height: 550px;
+				background-color: #ccc;		
+			}
+			.xnfo{
+				width:600px;
+      			height:400px;
+      			float: left;
+      			margin: 40px 400px;
+      			border:1px solid #ccc;
+      			position:relative;  /* 定位屬性*/
+      			overflow:hidden;
+			}
+			.xnfo .img{
+      			width:6000px;
+      			position:absolute;
+      			left:0px;
+      			top:0px;
+      			margin: 0;
+      			padding: 0;
+      			list-style: none;
+
+      		}
+      		.xnfo .img img{
+      			width:600px;    
+      			height:400px;
+      			/*圖片的寬高 要跟banner*/
+      		}
+      		.xnfo .img li{
+      			float: left;
+      		}
+      		.xnfo .btn{
+      			width: 30px;
+      			height: 50px;
+      			background-color: #ccc;
+      			opacity: 0.5;
+      			filter: alpha(opacity: 0.5);
+      			position: absolute;
+      			top: 50%;
+      			margin-top: -25px;
+      			cursor: pointer;
+      			text-align: center;
+      			line-height: 50px;
+      			font-size: 50px;
+      			color:#fff;
+      			display:none;
+      		}
+      		.xnfo .left{
+      			left:0px;
+      		}
+      		.xnfo .right{
+      			right:0px;
+      		}
+      		.xnfo:hover .btn{
+      			display:block;
+      		}		
+			#info{
+				width: 100%;
+				height: 40%;
+				background-color: #555;
+			}
+			.active{
+        	background-color: #ff0000;
+       		}
+.cnfo{
+	float: right;
+	margin: 15px 100px;
+	padding:0;
+	text-align: center;
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	width: 250px;
+	height: 150px;
+	}
+.cnfo img{
+	width: 200px;
+	height: 100px;
+}
+.cnfo p{
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+#rnfo{
+	background-color: #ffffff;
+	width: 100%;
+	height: 70%;
+}
+#rnfo h1{
+	text-align: center;
+}
+#rnfo hr{
+	color: #555;
+	text-align: center;
+	width: 90%;
+}
+.nnfo{
+	float: left;
+	margin: 50px 90px;
+}
+.nnfo img{
+	width:500px;
+	height: 300px;
+}
+.nnfo p{
+	text-align: center;
+	font-size: 20px;
+}
+.mnfo{
+	float: left;
+	width: 400px;
+	height: 600px;
+	margin: 50px 10px;
+}
+.mnfo a{
+	font-size: 23px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 30px;
+}
+#anfo{
+	background-color: #ffffff;
+	width: 100%;
+	height: 70%;
+}
+#anfo{
+	text-align: center;
+}
+#anfo img{
+	width: 150px;
+	height: 100px;
+	float: left;
+	bottom: 0;
+}
+#anfo hr{
+	width: 90%;
+}
+#bnfo{
+	float: left;
+	width: 500px;
+	height: 400px;
+	margin: 10px 200px;
+	border: 1px solid#555;
+	position: relative;
+
+}
+#bnfo img{
+	width: 500px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	
+	}
+#bnfo p{
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	font-weight: bold;
+}
+#enfo{
+	width: 500px;
+	height: 300px;
+	float: right;
+	margin: 10px 300px;
+	background-color: #ccc;
+	overflow:hidden;
+	position:relative;
+	bottom: 400px; 
+}	
+
+.dnfo{
+	width:500px;
+    	height:300px;
+   	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#enfo .dnfo{
+      	width:5000px;
+      	position:absolute;
+      	left: 0;
+      	}
+#enfo .dnfo img{
+	width: 500px;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+	
+}
+ .dnfo li{
+      	float:left;
+      }
+ .btn{
+      	width:30px;
+      	height:50px;
+      	background-color: #ccc;
+
+      	/*透明度寫法*/
+      	opacity: 0.5;
+      	filter:alpha(opacity:0.5);
+      	position: absolute;
+      	top:50%;
+      	margin-top:-25px;
+
+      	/*字型顏色*/
+      	cursor: pointer;  /* cursor 是用來改變滑鼠游標的形狀  pointer 手指去點的圖示*/
+      	text-align: center;
+      	line-height: 50px;
+      	font-size: 50px;
+      	color:#fff;
+      	display:none;
+      }
+
+      .enfo .left2{
+      	left:0px;
+      }
+      .enfo .right2{
+      	right:0px;
+      }
+      .enfo:hover .btn{
+      	display:block;
+      }
+#pnfo img{
+	width: 150px;
+	height: 100px;
+	float: left;
+	margin: 5px 10px;
+}
+#pnfo hr{
+	color: #555;
+	text-align: center;
+	width: 90%;
+}
