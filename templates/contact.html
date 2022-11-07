@@ -1,0 +1,61 @@
+{% extends "BasePage.html" %}
+
+{% block Title %}
+聯絡我們        
+{% endblock %}
+
+{% block css %}
+<link href="{{ url_for('static',filename='css/mc_contact.css') }}" rel="stylesheet" >
+{% endblock %}
+
+{% block mainPage %}
+<div style="margin-top: 50px;"></div>
+ <div id="company">
+        <p>您的支持與愛護是我們進步的動力。</p>
+        <p>
+            "顧客服務中心服務時間："
+            <br>
+            "週一至週五 09:00-18:00（國定假日除外）"
+        </p>
+        <ul>
+            <li>市話0800-211-321 </li>
+            <li>手機請改撥02-8066-1056</li>
+        </ul>
+        <p>
+            "防疫期間，服務時間或有調整，不便之處敬請見諒。"
+            <br>
+            "歡迎多加利用客服電郵信箱"
+        </p>
+</div>   
+<div id="message">
+    <p class="subject">業務聯絡</p>
+    <form class="contact_form" action="/addMessage" method="post">
+        <div class="form-group">
+            <label>標題</label>
+            <input type="text" name="title" class="form-control" required/>
+        </div>
+
+        <div class="form-group">
+            <label>姓名</label>
+            <input type="text" name="username" class="form-control" required/>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required/>
+        </div>
+
+        <div class="form-group">
+            <label>反應內容</label>
+            <textarea name="content" row="10" class="form-control" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn_submit">送出訊息</button>
+        </div>
+
+    </form>
+
+</div>    
+ 
+{% endblock %}

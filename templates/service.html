@@ -1,0 +1,44 @@
+{% extends 'BasePage.html' %}
+
+{% block pageTitle %}
+產品列表
+{% endblock %}
+
+{% block css %}
+
+<link href="{{ url_for('static',filename='css/product.css') }}" rel="stylesheet" >
+
+{% endblock %}
+
+
+{% block mainPage %}
+<form action="/service" method="get">
+		商品類別：<select name="item">
+					<option value="0" selected>請選擇....</option>
+			        <option value="1" >早餐</option>
+			        <option value="2">超值套餐</option>
+			        <option value="3">Happy Meal</option>
+			        <option value="4">飲料</option>
+			        <option value="5">點心</option>
+			        
+			     </select>
+			     <p></p>
+		商品名稱：<input type="text" name="p" style="font-size:20px;" />	 
+		<p></p>
+		<input type="submit" style="font-size:20px;" value="查詢">       
+</form>
+	
+	{% for row in result %}
+
+		<div class="info">
+			<a href="https://www.mcdonalds.com/{{row[3]}}" target="_blank">
+				<img src="{{row[4]}}">
+			</a>	
+				<p>{{row[2]}}</p>
+		</div>
+
+
+	{% endfor %}
+	<img src="{{url_for('static',filename='img/mc4.jpg')}}">
+
+{% endblock %}
