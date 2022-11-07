@@ -1,0 +1,25 @@
+.news{
+	width: 70%;
+	font-size: 16px;
+	height: 200px;
+	margin-top:50px;
+	margin-left: 20%;
+	clear: both;
+}
+.newsleft{
+	float: left;
+	width: 20%;
+}
+.newsleft img{
+	width: 100%;
+
+}
+.newsright{
+	float: left;
+	width: 60%;
+	
+}
+
+.newsright p{
+	margin-top: 50px;
+}

@@ -1,0 +1,20 @@
+{% extends "BasePage.html" %}
+
+{% block Title %}
+首頁        
+{% endblock %}
+
+{% block css %}
+
+<link href="{{ url_for('static',filename='css/index.css') }}" rel="stylesheet" >
+
+{% endblock %}
+
+{% block mainPage %}
+<div id="mainweb">
+	<img src="{{url_for('static',filename='img/mc8.png')}}">
+	<p>這個是首頁</p>
+
+
+</div>
+{% endblock %}

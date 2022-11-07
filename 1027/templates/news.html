@@ -1,0 +1,32 @@
+{% extends 'BasePage.html' %}
+
+
+{% block pageTitle %}
+新聞
+{% endblock %}
+
+{% block css %}
+<link href="{{ url_for('static',filename='css/news.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block mainPage %}
+{% for row in allnews %} 
+
+		<div class="news">
+
+			<div class="newsleft">
+
+					<img src="{{url_for('static',filename='img/mc2.jpg')}}">
+				
+				
+			</div>
+			<div class="newsright">
+				<p><a href= "https://www.mcdonalds.com/{{row[2]}}">{{row[1]}}</a></p>
+				<p>{{row[4]}}</p>
+			</div>
+
+		</div>
+
+	{% endfor %}
+
+{% endblock %}
